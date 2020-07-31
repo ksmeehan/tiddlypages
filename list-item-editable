@@ -1,0 +1,13 @@
+Used for list
+
+@@width:100%;auto;border:0.5px solid #f0f0f0;clear:both;margin-bottom:0;margin:-top:0;
+---
+@@
+
+<$button  class="tc-btn-invisible tc-tiddlylink" aria-label="edit" style="float:right; clear:both; color:#989898;margin-top:-.5em;margin-bottom:.5em;"> 
+<$list filter="[title<currentTiddler>is[missing]then[Create]else[{{$:/core/images/edit-button}}]]">
+<<currentTiddler>>
+</$list>
+<$action-sendmessage $message="tm-edit-tiddler" title="{{!!title}}"/></$button>
+
+{{!!text}}
