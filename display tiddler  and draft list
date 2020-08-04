@@ -1,0 +1,15 @@
+<$list filter="[tag[sample tiddler]]">
+
+{{||In-List Template}}
+
+<$list filter="[tag[sample tiddler]draft.of<currentTiddler>]">
+
+{{||$:/core/ui/EditTemplate}}
+
+</$list>
+
+</$list>
+
+
+
+
