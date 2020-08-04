@@ -1,5 +1,3 @@
-Used for list
-
 @@width:100%;auto;border:0.5px solid #f0f0f0;clear:both;margin-bottom:0;margin:-top:0;
 ---
 @@
@@ -8,6 +6,12 @@ Used for list
 <$list filter="[title<currentTiddler>is[missing]then[Create]else[{{$:/core/images/edit-button}}]]">
 <<currentTiddler>>
 </$list>
-<$action-sendmessage $message="tm-edit-tiddler" title="{{!!title}}"/></$button>
+<$action-createtiddler $basetitle={{!!title}} $template={{!!title}} draft.of={{!!title}} draft.title={{!!title}}/></$button>
 
 {{!!text}}
+
+
+
+
+
+
