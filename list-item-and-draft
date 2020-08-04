@@ -1,0 +1,12 @@
+<$list filter="[tag[sample tiddler]]">
+
+-  {{!!title}}<br/>
+Is there a tiddler with a draft of this?
+
+<$list filter="[tag[sample tiddler]draft.of<currentTiddler>]">
+
+> {{!!title}}
+
+</$list>
+
+</$list>
